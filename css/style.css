@@ -1,0 +1,128 @@
+/*
+#003331 dark bg
+#00FFF8 light bg
+#11D97C hover green
+#161616 black bg
+#035949 contact card bg
+#08A689 light green bg
+#00333181 account/checkout bg
+#CFCFCF light grey
+#38706D checkout h1
+*/
+/*SHADOW
+filter: drop-shadow(0.2rem 0.2rem 0.2rem rgba(26, 26, 26, 0.37));*/
+
+/*Reset*/
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62,5%;
+}
+
+body {
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    line-height: 1.5;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/*Globals*/
+.on-page {
+    color: #11D97C;
+}
+
+/*Primary Nav*/
+.primary-nav {
+    background-color: #141414e5;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.primary-nav .nav-logo img {
+    width: 17rem;
+}
+
+.primary-nav ul {
+    display: flex;
+}
+
+.primary-nav ul li a {
+    padding: 2rem;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.primary-nav ul li a:hover {
+   color: #11D97C;
+}
+
+.primary-nav .fa-gamepad {
+    font-size: 3.5rem;
+}
+
+.primary-nav .fa-gamepad:hover {
+    color: #11D97C;
+}
+
+.primary-nav ul li a i {
+    font-size: 1.5rem;
+}
+
+/*Footer*/
+footer {
+    background-color: #161616;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+    color: white;
+}
+
+footer .social-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer .social-container ul {
+    display: flex;
+    margin-left: 2rem;
+}
+
+footer .social-container ul li a {
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    font-size: 0.9rem;
+}
+
+footer .social-container ul li a:hover {
+    color: #11D97C;
+}
+
+/*INDEX*/
+.index-header {
+    background-image: linear-gradient(#002927f1, #00fff7ea),
+    url(/images/background/index-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
