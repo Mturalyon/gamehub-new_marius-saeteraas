@@ -1,4 +1,4 @@
-const contactForm = document.querySelector(".contact-form");                //targeting The Whole contact form.
+const contactForm = document.querySelector(".contact-form");                //targeting The Whole form./called it this because of the style"class" in previous form.
 
 const emailInput = document.querySelector("#email");                        //targeting the EMAIL field.
 const emailError = document.querySelector("#email-error");
