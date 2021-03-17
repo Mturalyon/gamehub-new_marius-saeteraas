@@ -16,11 +16,11 @@
 
 
     <script src="https://kit.fontawesome.com/944d42a4bf.js" crossorigin="anonymous"></script>
-    <title>Gamehub *-* Contact</title>
+    <title>Gamehub *-* Log In</title>
 </head>
 
 <body>
-    <header class="contact-header">
+    <header class="sign-header">
         <nav class="primary-nav">
             <a href="../index.html" class="nav-logo"><img src="/images/logo.png"
                     alt="the logo of the brand Gamehub"></a>
@@ -28,44 +28,35 @@
             <ul>
                 <li><a href="/html/search-result.html"><i class="fas fa-search fa-2x"></i></a></li>
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="/html/contact.html" class="on-page">Contact</a></li>
+                <li><a href="/html/contact.html">Contact</a></li>
                 <li><a href="/html/cart.html"><i class="fas fa-shopping-cart fa-2x"></i></a></li>
-                <li><a href="/html/sign-in.html"><i class="fas fa-user fa-2x"></i></a></li>
+                <li><a href="/html/sign-in.html" class="on-page"><i class="fas fa-user fa-2x"></i></a></li>
             </ul>
         </nav>
 
         <div class="contact-container">
             <form action="" method="GET" class="contact-form">
-                <h1>Contact Us</h1>
-                <div>
-                    <label for="name">Your Name
-                        <input type="text" name="name" id="name" placeholder="Full Name">
-                    </label>
-                    <p class="error-message" id="name-error">Please enter your name</p>
-                </div>
-
+                <h1>Login</h1>
                 <div>
                     <label for="email">Email
-                        <input type="text" name="email" id="email" placeholder="Email Address">
+                        <input type="text" name="email" id="email" placeholder="Your Email">
                     </label>
-                    <p class="error-message" id="email-error">Please enter a valid Email Address</p>
+                    <p class="error-message" id="email-error">Please enter a valid Email</p>
                 </div>
 
-                <div>
-                    <label for="subject">Subject
-                        <input type="text" name="subject" id="subject" placeholder="Your reason">
+                <div id="no-margin">
+                    <label for="password">Password
+                        <input type="password" name="password" id="password" placeholder="Password">
                     </label>
-                    <p class="error-message" id="subject-error">Please enter a subject</p>
+                    <p class="error-message" id="password-error">The email or password is invalid</p>
                 </div>
+                <a href="#" class="forgot-password">Forgot Password?</a>
 
-                <div class="last-div">
-                    <label for="message">Your Message
-                        <textarea name="message" id="message" cols="30" rows="10"
-                            placeholder="Enter Text Here..."></textarea>
-                    </label>
+                <button class="submit-btn">LOG IN</button>
+                <div class="sign-extra_container">
+                    <p>Have not Account yet?</p>
+                    <a href="/html/sign-up.html">SIGN UP</a>
                 </div>
-
-                <button class="submit-btn">SUBMIT</button>
             </form>
         </div>
     </header>
@@ -83,7 +74,7 @@
         </div>
         <h3>Copyright &copy;</h3>
     </footer>
-    <script src="../js/contact.js"></script>
+    <script src="/js/script.js"></script>
 </body>
 
 </html>

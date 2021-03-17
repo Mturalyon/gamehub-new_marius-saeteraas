@@ -83,4 +83,4 @@ function checkEmail(email) {                                                //ch
 };
 
 addEventListener("keyup", enableButton);
-addEventListener("submit", formValidation);
+contactForm.addEventListener("submit", formValidation);
