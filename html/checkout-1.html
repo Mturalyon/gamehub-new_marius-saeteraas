@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- https://xd.adobe.com/view/a21bf367-69ca-4fc0-820f-7dcb086718e9-f748/ -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="A website where you can sell your own games and buy new ones. Also possible to buy upcoming games by pre-ordering here at Gamehub.">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+
+
+    <script src="https://kit.fontawesome.com/944d42a4bf.js" crossorigin="anonymous"></script>
+    <title>Gamehub *-* Payment</title>
+</head>
+
+<body>
+    <header class="sign-header">
+        <nav class="primary-nav">
+            <a href="../index.html" class="nav-logo"><img src="/images/logo.png"
+                    alt="the logo of the brand Gamehub"></a>
+            <a href="/html/games-main.html"><i class="fas fa-gamepad fa-3x"></i></a>
+            <ul>
+                <li><a href="/html/search-result.html"><i class="fas fa-search fa-2x"></i></a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="/html/contact.html" class="on-page">Contact</a></li>
+                <li><a href="/html/cart.html"><i class="fas fa-shopping-cart fa-2x"></i></a></li>
+                <li><a href="/html/sign-in.html"><i class="fas fa-user fa-2x"></i></a></li>
+            </ul>
+        </nav>
+
+        <div class="contact-container">
+            <form action="" method="GET" class="contact-form">
+                <h1>Payment Details</h1>
+                <div>
+                    <label for="email">Email
+                        <input type="text" name="email" id="email" placeholder="Email for receipt">
+                    </label>
+                    <p class="error-message" id="email-error">Please enter a valid Email Address</p>
+                </div>
+
+                <div>
+                    <label for="name">Cardholder Name
+                        <input type="text" name="name" id="name" placeholder="Full Name">
+                    </label>
+                    <p class="error-message" id="name-error">Please enter cardholders name</p>
+                </div>
+
+                <div>
+                    <label for="card-number">Card Number
+                        <input type="number" name="card-number" id="card-number" placeholder="0000 0000 0000 0000">
+                    </label>
+                    <p class="error-message" id="card_number-error">Enter card number 16 digits</p>
+                </div>
+
+                <div class="payment_last-div" id="payment_last-div">
+                    <div>
+                        <label for="cvv">CVV
+                            <input type="number" name="cvv" id="cvv" placeholder="***">
+                        </label>
+                        <p class="error-message" id="cvv-error">3 digits required</p>
+                    </div>
+
+                    <div class="expire-div" id="expire-div">
+                        <label for="expire">Expire Date
+                            <div>
+                                <select name="expire-m" id="expire-m">
+                                    <option value='01'>January</option>
+                                    <option value='02'>February</option>
+                                    <option value='03'>March</option>
+                                    <option value='04'>April</option>
+                                    <option value='05'>May</option>
+                                    <option value='06'>June</option>
+                                    <option value='07'>July</option>
+                                    <option value='08'>August</option>
+                                    <option value='09'>September</option>
+                                    <option value='10'>October</option>
+                                    <option value='11'>November</option>
+                                    <option value='12'>December</option>
+                                </select>
+                                <select name="expire-y" id="expire-y">
+                                    <option value='20'>2020</option>
+                                    <option value='21'>2021</option>
+                                    <option value='22'>2022</option>
+                                    <option value='23'>2023</option>
+                                    <option value='24'>2024</option>
+                                    <option value='25'>2025</option>
+                                </select>
+                            </div>
+                        </label>
+
+                    </div>
+                </div>
+
+                <div class="total-amount">
+                    <hr>
+                    <div>
+                        <h3>Total Amount:</h3>
+                        <h3>200 NOK</h3>
+                    </div>
+                </div>
+
+                <button class="submit-btn">COMPLETE</button>
+            </form>
+        </div>
+    </header>
+
+    <!-----------------------FOOTER-------------------------------->
+    <footer>
+        <div class="social-container">
+            <h3>For latest news in gaming, join us on:</h3>
+            <ul>
+                <li><a href="#"><i class="fab fa-twitter fa-2x"></i></a></li>
+                <li><a href="#"><i class="fab fa-facebook fa-2x"></i></a></li>
+                <li><a href="#"><i class="fab fa-discord fa-2x"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram fa-2x"></i></a></li>
+            </ul>
+        </div>
+        <h3>Copyright &copy;</h3>
+    </footer>
+    <script src="/js/checkout.js"></script>
+</body>
+
+</html>

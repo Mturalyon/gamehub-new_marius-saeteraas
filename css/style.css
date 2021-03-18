@@ -585,3 +585,52 @@ JS INNERHTML*/
 .cart-cards {
     color: white;
 }
+
+/*CHECKOUT*/
+
+.payment_last-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.expire-div select {
+    padding: 0.33rem 0.6rem;
+    font-size: 0.8rem;
+    border-radius: 0.3rem;
+    border: 2px solid #CFCFCF;
+    font-family: "open sans", helvetica, sans-serif;
+    resize: none;
+}
+
+#expire-div div, #payment_last-div {
+    margin: 0;
+}
+
+.total-amount {
+    margin: 1rem 0;
+}
+
+.total-amount hr {
+    margin-bottom: 0.5rem;
+    border: #08A689 1px solid;
+}
+
+.total-amount div {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*
+checkout message*/
+#check-complete {
+    text-align: center;
+    margin: 0;
+}
+
+#check-complete h2 {
+    font-size: 1.3rem;
+}
+
+#check-complete .back-btn {
+    margin-top: 1.8rem;
+}
