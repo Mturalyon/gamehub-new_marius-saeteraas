@@ -335,4 +335,69 @@ JS INNERHTML*/
     color: #067e68;
 }
 
-/*SIGN UP*/
+/*ACCOUNT*/
+.account-nav a:hover {
+    color: #067e68;
+    text-decoration: underline;
+}
+
+.account-flex {
+    padding: 0 20rem;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    min-height: 93vh;
+}
+
+.account-flex section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+}
+
+.account-flex_profile {
+    display: flex;
+    align-items: center;
+}
+
+.account-flex_profile img {
+    margin-right: 2rem;
+}
+
+.account-flex_profile h1 {
+    font-size: 1.7rem;
+    font-weight: normal;
+    margin-bottom: 0.5rem;
+}
+
+.account-flex_profile h2 {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.account-flex section a {
+    filter: drop-shadow(0.2rem 0.2rem 0.2rem rgba(26, 26, 26, 0.37));
+}
+
+.account-flex_add {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.account-nav {
+    line-height: 3.5;
+    font-size: 1.2rem;
+    padding-right: 2rem;
+    margin-right: 1rem;
+}
+
+.account-flex_nav div {
+    border-left: 0.1rem solid#11D97C;
+}
+
+.account-flex_nav {
+    display: flex;
+}
