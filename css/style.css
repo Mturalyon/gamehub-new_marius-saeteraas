@@ -806,3 +806,40 @@ checkout message*/
     color: #11D97C;
     background-color: rgb(20, 20, 20);
 }
+
+/*SPECIFIC MAIN*/
+.flex-center {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.game-header_green {
+    color: #11D97C;
+    margin-top: 9rem;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+}
+
+.games-many_container a img {
+    min-width: 20rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    filter: drop-shadow(0.2rem 0.2rem 0.2rem rgba(26, 26, 26, 0.37));
+}
+
+.games-many_container {
+    padding-left: 10rem;
+    margin-bottom: 5rem;
+}
+
+.console-game_container .games-nav {
+    padding-left: 5rem;
+}
+
+.console-game_container {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    padding-right: 7rem;
+}
