@@ -634,3 +634,108 @@ checkout message*/
 #check-complete .back-btn {
     margin-top: 1.8rem;
 }
+
+/*GAMES*/
+.games-specific_container {
+    display: flex;
+    padding-right: 10rem;
+    color: white;
+}
+
+.games-specific_container .games-nav {
+    padding-left: 5rem;
+    margin-right: 10rem;
+}
+
+.games-specific_game-img {
+    margin-right: 5rem;
+    max-width: 25rem;
+    max-height: 30rem;
+    filter: drop-shadow(0.2rem 0.2rem 0.5rem rgba(26, 26, 26, 0.37));
+}
+
+.games-specific_container-2 {
+    display: flex;
+    justify-content: space-between;
+    line-height: 3;
+    margin-bottom: 4rem;
+}
+
+.games-specific_container-2 h3 {
+    font-size: 2rem;
+    line-height: 1;
+}
+
+.games-specific_container-2 h4 {
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+
+.games-specific_container-2 p {
+    color: #CFCFCF;
+}
+
+.games-specific_margin-h4 {
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+}
+
+.games-specific_profile-container {
+    text-align: center;
+    line-height: 1.5;
+}
+
+.games-specific_button-container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.games-description {
+    background-color: #161616;
+    width: 37rem;
+    padding: 3rem;
+    margin-bottom: 5rem;
+    filter: drop-shadow(0.2rem 0.2rem 0.2rem rgba(26, 26, 26, 0.37));
+}
+
+.games-description h5 {
+    font-size: 1.1rem;
+    text-decoration: underline;
+    margin-bottom: 2rem;
+}
+
+.btn-add-cart_black {
+    background-color: #161616;
+    padding: 1.35rem 10rem;
+    margin-right: 2rem;
+    font-weight: bolder;
+    filter: drop-shadow(0.2rem 0.2rem 0.2rem rgba(26, 26, 26, 0.37));
+}
+
+.btn-add-cart_black:hover {
+    color: #11D97C;
+}
+
+.favourite_black {
+    background-color: #161616;
+    padding: 1rem;
+    filter: drop-shadow(0.2rem 0.2rem 0.2rem rgba(26, 26, 26, 0.37));
+}
+
+.favourite_black:hover {
+    color: #11D97C;
+}
+
+/*GAMES MAIN*/
+.games-main_container {
+    display: flex;
+    padding-right: 10rem;
+    color: white;
+}
+
+.games-main_container .games-nav {
+    padding-left: 5rem;
+    margin-right: 10rem;
+}
