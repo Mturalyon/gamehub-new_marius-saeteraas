@@ -845,6 +845,71 @@ checkout message*/
 }
 
 /*---MEDIA QUERIES---*/
+/*_____media-queries MAX 1500px_____*/
+@media screen and (max-width: 1500px) {
+    /*__CART__*/
+    .cart-cards_row-1 {
+        display: flex;
+        flex-direction: column;
+    }
+    .cart-cards_row-1_1 {
+        margin-right: 0;
+        margin-bottom: 2.5rem;
+    }
+    .total-sum {
+        width: 100%;
+    }
+    .cart-flex {
+        justify-content: center;
+        display: flex;
+        padding-left: 0;
+    }
+    .cart-flex .games-nav {
+        margin-right: 5rem;
+    }
+}
+
+/*_____media-queries MAX 900px_____*/
+@media screen and (max-width: 900px) {
+    .cart-flex {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        padding-left: 0;
+    }
+    .cart-flex .games-nav {
+        margin-right: 0;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    .cart-cards_row-1_1 {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        padding: 2.5rem;
+        margin-right: 0;
+        width: 100%;
+    }
+    .cart-cards .trash-can {
+        align-self: flex-start;
+    }
+    .cart-cards_row-1_2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .img-remove_container {
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+    .cart-flex .games-nav {
+        margin-bottom: 5rem;
+    }
+}
+
 /*_____media-queries MAX 600px_____*/
 @media screen and (max-width: 600px) {
     /*__MAIN NAV__*/
@@ -909,6 +974,8 @@ checkout message*/
         border-radius: 0;
         min-width: 100%;
     }
+
+    /*__CART__*/
 
 }
 
