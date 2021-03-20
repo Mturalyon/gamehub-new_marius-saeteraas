@@ -874,6 +874,36 @@ checkout message*/
         display: flex;
         flex-direction: column;
     }
+
+    /*__GAMES__*/
+    .games-specific_container {
+        display: flex;
+        justify-content: space-evenly;
+        padding-right: 0;
+    }
+    .games-specific_container .games-nav {
+        padding-left: 0;
+        margin-right: 0;
+    }
+    .games-specific_game-img {
+        margin-right: 0;
+    }
+    .games-specific_container-2 {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .games-specific_profile-container {
+        text-align: start;
+    }
+    .btn-add-cart_black {
+        padding: 1.35rem 5rem;
+        margin-right: 1rem;
+    }
+    .games-description {
+        width: 22rem;
+        padding: 3rem;
+        margin-bottom: 5rem;
+    }
 }
 
 /*_____media-queries MAX 900px_____*/
@@ -967,6 +997,36 @@ checkout message*/
 
     .slider section > div p {
        font-size: 0.8rem;
+    }
+
+    /*__GAMES__*/
+    .games-specific_container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .games-specific_container .games-nav {
+        margin-bottom: 3rem;
+    }
+    .games-specific_profile-container {
+        text-align: center;
+    }
+    .games-specific_button-container {
+        justify-content: center;
+    }
+    .games-specific_game-img {
+        margin-bottom: 3rem;
+        width: 18rem;
+    }
+    .btn-add-cart_black {
+        padding: 1.35rem 4rem;
+        margin-right: 0.5rem;
+    }
+    .games-description {
+        width: 18.5rem;
+        padding: 1.5rem;
+        margin-bottom: 5rem;
     }
 }
 
