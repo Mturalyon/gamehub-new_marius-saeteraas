@@ -1028,6 +1028,28 @@ checkout message*/
         padding: 1.5rem;
         margin-bottom: 5rem;
     }
+
+    /*__GAMES CATEGORY*/
+    .console-game_container {
+        flex-direction: column;
+        justify-content: left;
+        align-items: center;
+        padding-right: 0;
+    }
+    .console-game_container .games-nav {
+        text-align: center;
+    }
+    .games-many_container {
+        padding-left: 0rem;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+    }
+    .console-game_container .games-nav {
+        padding-left: 0;
+        margin-bottom: 3rem;
+    }
 }
 
 /*_____media-queries MAX 600px_____*/
@@ -1139,5 +1161,11 @@ checkout message*/
 
     .slider {
         padding: 0 1rem;
+    }
+
+    /*__GAMES CATEGORY__*/
+    .games-many_container a img {
+        width: 10rem;
+        margin-right: 0;
     }
 }
