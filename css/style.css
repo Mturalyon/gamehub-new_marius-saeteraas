@@ -867,10 +867,18 @@ checkout message*/
     .cart-flex .games-nav {
         margin-right: 5rem;
     }
+
+    /*__ACCOUNT__*/
+    .account-flex {
+        padding: 8rem 13rem;
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 /*_____media-queries MAX 900px_____*/
 @media screen and (max-width: 900px) {
+    /*__CART__*/
     .cart-flex {
         flex-direction: column;
         justify-content: center;
@@ -907,6 +915,24 @@ checkout message*/
     }
     .cart-flex .games-nav {
         margin-bottom: 5rem;
+    }
+    /*__ACCOUNT__*/
+    .account-flex section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+    .account-flex {
+        padding: 8rem 0rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .account-flex_profile {
+        margin-bottom: 2rem;
     }
 }
 
@@ -986,5 +1012,21 @@ checkout message*/
         flex-direction: column;
         display: flex;
         justify-content: space-between;
+    }
+
+    /*__ACCOUNT__*/
+    .account-flex_profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+    .account-flex_profile img {
+        margin-right: 0;
+    }
+    
+    .account-flex_profile h1 {
+        margin-bottom: 0;
     }
 }
