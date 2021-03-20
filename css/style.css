@@ -934,6 +934,40 @@ checkout message*/
     .account-flex_profile {
         margin-bottom: 2rem;
     }
+
+    /*__GAMES MAIN__*/
+    .games-main_container {
+        flex-direction: column;
+        align-items: center;
+        padding-right: 0;
+    }
+
+    .games-main_container .games-nav {
+        padding-left: 0;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .game-header_green {
+        text-align: center;
+    }
+
+    .slider {
+        padding: 0 2rem;
+    }
+
+    .slider a img {
+        width: 15rem;
+    }
+
+    .slider section > div {
+        width: 15rem;
+        height: 20.95rem;
+    }
+
+    .slider section > div p {
+       font-size: 0.8rem;
+    }
 }
 
 /*_____media-queries MAX 600px_____*/
@@ -1001,7 +1035,10 @@ checkout message*/
         min-width: 100%;
     }
 
-    /*__CART__*/
+    /*__GAMES MAIN__*/
+    .slider section > div {
+        display: none;
+    }
 
 }
 
@@ -1028,5 +1065,19 @@ checkout message*/
     
     .account-flex_profile h1 {
         margin-bottom: 0;
+    }
+
+    /*__GAMES MAIN__*/
+    .slider a img {
+        width: 10rem;
+    }
+
+    .games-main_btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+    }
+
+    .slider {
+        padding: 0 1rem;
     }
 }
