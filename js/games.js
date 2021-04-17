@@ -1,7 +1,7 @@
 const container = document.querySelector(".games-specific-wrapper");                       //targeting container for the games info
 const header = document.querySelector(".game-header_green");                               //targeting category header
 
-const navXbox = document.querySelector(".games-nav ul li:nth-child(1) a");
+const navXbox = document.querySelector(".games-nav ul li:nth-child(1) a");                 //targeting all the links for games navigation
 const navPlaystation = document.querySelector(".games-nav ul li:nth-child(2) a");
 const navNintendo = document.querySelector(".games-nav ul li:nth-child(3) a");
 const navPc = document.querySelector(".games-nav ul li:nth-child(4) a");
@@ -62,7 +62,7 @@ function createHTML(details) {                                                  
     header.innerHTML = `${details.categories[0].name.toUpperCase()}`;                       //also changing category header accordingly
 }
 
-function navOrganize(details) {
+function navOrganize(details) {                                                            //function for setting on page indication on the game navigation
     if (details.categories[0].name === "xbox") {
         navXbox.classList.add("on-page");
     }
