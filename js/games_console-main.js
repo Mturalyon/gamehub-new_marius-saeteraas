@@ -13,7 +13,7 @@ async function callApis() {                                                 //fu
 
         container.innerHTML = "";                                           //resetting container from loader
 
-        for (let i = 0; i < json.length; i++) {                             //looping through array items and loading them up to the container
+        for (let i = 0; i < json.length; i++) {                             //looping through array items and loading them up to the container, and adding id to querystring if clicked
             container.innerHTML += `<a href="games.html?id=${json[i].id}"><img src="${json[i].images[0].src}"
             alt="picture link to video game site"></a>`;
         };

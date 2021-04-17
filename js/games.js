@@ -1,30 +1,31 @@
-const container = document.querySelector(".games-specific-wrapper");
-const header = document.querySelector(".game-header_green");
+const container = document.querySelector(".games-specific-wrapper");                       //targeting container for the games info
+const header = document.querySelector(".game-header_green");                               //targeting category header
 
-const queryString = document.location.search;
-const params = new URLSearchParams(queryString);
-const id = params.get("id");
+const queryString = document.location.search;                                              //targeting querystring
+const params = new URLSearchParams(queryString);                                           //searching parameters of querystring
+const id = params.get("id");                                                               //catching the value of the "id" parameter
 
-const url = "https://saeteraas.one/wp-json/wc/store/products/" + id;
+const url = "https://saeteraas.one/wp-json/wc/store/products/" + id;                       //targeting product with specific id
 
-async function callApi() {
+async function callApi() {                                                                 //calling API function
 
     try {
-        const response = await fetch(url);
-        const json = await response.json();
+        const response = await fetch(url);                                                 //fetching URL
+        const json = await response.json();                                                //fetching JSON from URL
 
         console.log(json);
-        createHTML(json);
+        header.innerHTML = "";
+        createHTML(json);                                                                  //calling a separate function that creates the HTML
     }
-    catch (error) {
+    catch (error) {                                                                        //catching and displaying errors
         console.log(error);
     }
 
 };
 
-callApi()
+callApi()                                                                                  //calling the API function
 
-function createHTML(details) {
+function createHTML(details) {                                                             //creating HTML with the JSON info
     container.innerHTML = `  
     <img src="${details.images[0].src}" alt="a picture of the game on sale" class="games-specific_game-img">
     <section>
@@ -53,5 +54,5 @@ function createHTML(details) {
             <p>${details.description}</p>
         </div>
     </section>`;
-    header.innerHTML = `${details.categories[0].name.toUpperCase()}`;
+    header.innerHTML = `${details.categories[0].name.toUpperCase()}`;                       //also changing category header accordingly
 }
