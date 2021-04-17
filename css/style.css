@@ -845,7 +845,7 @@ checkout message*/
     padding-right: 7rem;
 }
 
-/*Loader*/
+/*LOADER*/
 .loader {
     border: 16px solid #f3f3f3;
     border-top: 16px solid #11D97C;
@@ -866,6 +866,12 @@ checkout message*/
     display: flex;
     align-items: center;
     justify-content: center;
+}
+/*--games page*/
+.games-specific-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 /*---MEDIA QUERIES---*/
@@ -906,7 +912,7 @@ checkout message*/
         padding-right: 0;
     }
     .games-specific_container .games-nav {
-        padding-left: 0;
+        padding-left: 3.5rem;
         margin-right: 0;
     }
     .games-specific_game-img {
@@ -1024,6 +1030,9 @@ checkout message*/
     }
 
     /*__GAMES__*/
+    .games-specific_container .games-nav {
+        padding-left: 0;
+    }
     .games-specific_container {
         flex-direction: column;
         align-items: center;
@@ -1051,6 +1060,11 @@ checkout message*/
         width: 18.5rem;
         padding: 1.5rem;
         margin-bottom: 5rem;
+    }
+    .games-specific-wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     /*__GAMES CATEGORY*/
