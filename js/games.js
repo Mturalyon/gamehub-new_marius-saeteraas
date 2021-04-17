@@ -10,11 +10,11 @@ const url = "https://saeteraas.one/wp-json/wc/store/products/" + id;            
 async function callApi() {                                                                 //calling API function
 
     try {
+        header.innerHTML = "";
         const response = await fetch(url);                                                 //fetching URL
         const json = await response.json();                                                //fetching JSON from URL
 
         console.log(json);
-        header.innerHTML = "";
         createHTML(json);                                                                  //calling a separate function that creates the HTML
     }
     catch (error) {                                                                        //catching and displaying errors
