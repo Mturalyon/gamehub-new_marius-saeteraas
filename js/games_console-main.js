@@ -1,6 +1,6 @@
 const container = document.querySelector(".games-many_container");
 
-const url = "http://saeteraas.one/wp-json/wc/store/products";
+const url = "https://saeteraas.one/wp-json/wc/store/products";
 
 async function callApis() {
 
