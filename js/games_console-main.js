@@ -19,7 +19,12 @@ async function callApis() {                                                 //fu
         };
     }
     catch (error) {                                                         //catching and displaying error message
-        container.innerHTML = "an error has occured";
+        container.innerHTML = ` <div class="error-container">
+                                    <div>
+                                        <i class="fas fa-exclamation-circle fa-lg"></i>
+                                        <h3>WOOPS! There seems to be an error</h3>
+                                    </div>
+                                </div>`;
     }
 
 };
