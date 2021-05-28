@@ -68,13 +68,13 @@ function createHTML(details) {                                                  
 }
 
 function navOrganize(details) {                                                            //function for setting on page indication on the game navigation
-    if (details.categories[0].name === "xbox") {
+    if (details.categories[0].name.toLowerCase() === "xbox") {
         navXbox.classList.add("on-page");
     }
-    else if (details.categories[0].name === "pc") {
+    else if (details.categories[0].name.toLowerCase() === "pc") {
         navPc.classList.add("on-page");
     }
-    else if (details.categories[0].name === "nintendo") {
+    else if (details.categories[0].name.toLowerCase() === "nintendo") {
         navNintendo.classList.add("on-page");
     } else {
         navPlaystation.classList.add("on-page");
