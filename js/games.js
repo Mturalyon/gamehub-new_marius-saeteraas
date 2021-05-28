@@ -10,7 +10,7 @@ const queryString = document.location.search;                                   
 const params = new URLSearchParams(queryString);                                           //searching parameters of querystring
 const id = params.get("id");                                                               //catching the value of the "id" parameter
 
-const url = "https://api.saeteraas.one/wp-json/wc/store/products" + id;                       //targeting product with specific id
+const url = "https://api.saeteraas.one/wp-json/wc/store/products/" + id;                       //targeting product with specific id
 
 async function callApi() {                                                                 //calling API function
 
