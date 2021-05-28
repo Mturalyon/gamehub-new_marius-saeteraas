@@ -17,7 +17,6 @@ async function callApi() {                                                      
     try {
         const response = await fetch(url);                                                 //fetching URL
         const json = await response.json();                                                //fetching JSON from URL
-        console.log(json);
 
         createHTML(json);                                                                  //calling a separate function that creates the HTML
         navOrganize(json);
