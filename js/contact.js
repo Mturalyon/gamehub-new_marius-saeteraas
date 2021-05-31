@@ -10,18 +10,9 @@ const emailInput = document.querySelector("#email");                        //ta
 const emailError = document.querySelector("#email-error");
 
 const textArea = document.querySelector("#message");                        //targeting TEXTAREA
+const textError = document.querySelector("#message-error");
 
 const submitButton = document.querySelector(".submit-btn");                 //targeting the SUBMIT button.
-
-submitButton.disabled = true;
-
-function enableButton() {                                                   //enables button ONKEY
-    if (nameInput.value.trim().length > 0 || subjectInput.value.trim().length > 0 || emailInput.value.trim().length > 0 || textArea.value.trim().length > 0) {
-        submitButton.disabled = false;
-    } else {
-        submitButton.disabled = true;
-    };
-};
 
 function formValidation(event) {
     event.preventDefault();                                                 //Prevent Default Behaviour
@@ -29,6 +20,7 @@ function formValidation(event) {
     let nameConfirm;
     let emailConfirm;
     let subjectConfirm;
+    let messageConfirm;
 
     if (checkError(nameInput.value, 0)) {                                   //Name Error Check
         nameError.style.display = "none";
@@ -38,12 +30,20 @@ function formValidation(event) {
         nameConfirm = false;
     };
 
-    if (checkError(subjectInput.value, 0)) {                                //Subject Error Check
+    if (checkError(subjectInput.value, 4)) {                                //Subject Error Check
         subjectError.style.display = "none";
         subjectConfirm = true;
     } else {
         subjectError.style.display = "block";
         subjectConfirm = false;
+    };
+
+    if (checkError(textArea.value, 4)) {                                //Subject Error Check
+        textError.style.display = "none";
+        messageConfirm = true;
+    } else {
+        textError.style.display = "block";
+        messageConfirm = false;
     };
 
     if (checkEmail(emailInput.value)) {                                     //Valid Email check
@@ -54,7 +54,7 @@ function formValidation(event) {
         emailConfirm = false;
     }
 
-    if (nameConfirm & subjectConfirm & emailConfirm) {                      //checking if all form passes validation
+    if (nameConfirm & subjectConfirm & emailConfirm & messageConfirm) {                      //checking if all form passes validation
         contactForm.classList.add("complete-container");
         contactForm.innerHTML = `<div>
                                     <h1>Message Complete!</h1>
@@ -82,5 +82,4 @@ function checkEmail(email) {                                                //ch
     return patternMatches;
 };
 
-addEventListener("keyup", enableButton);
 contactForm.addEventListener("submit", formValidation);
