@@ -5,8 +5,6 @@ const pcSlider = document.querySelector(".pc-slider");
 
 const sliderContainer = document.querySelector(".slider-container");
 
-console.log(xboxSlider, playstationSlider, nintendoSlider, pcSlider);
-
 const url = "https://api.saeteraas.one/wp-json/wc/store/products?per_page=100";
 
 async function callApis() {

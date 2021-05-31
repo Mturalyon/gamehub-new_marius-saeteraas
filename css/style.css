@@ -199,6 +199,38 @@ footer .social-container ul li a:hover {
     text-decoration: underline;
 }
 
+/*
+--main*/
+.index-main {
+    background-image: linear-gradient(#003331e3, #09726eea);
+    padding: 2.5rem 0 2.5rem 0;
+}
+.index-main section {
+    text-align: center;
+    padding: 3rem 0 3rem 0;
+    display: block;
+}
+
+.index-main section .index-link-header {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+}
+.index-main section .index-link-header:hover {
+    color: #11D97C;
+    text-decoration: underline;
+}
+.index-games-container {
+    padding-top: 3rem;
+}
+.index-games-container a {
+    margin: 0.5rem 0.7rem 0.5rem 0.7rem;
+    display: inline-block;
+}
+.index-games-container a img {
+    width: 20rem;
+}
+
 /*CONTACT*/
 .contact-header {
     background-image: linear-gradient(#003331e3, #00fff7ea),
@@ -1185,6 +1217,11 @@ checkout message*/
 
 /*_____media-queries MAX 450px_____*/
 @media screen and (max-width: 450px) {
+    /*__INDEX__*/
+    .index-games-container a img {
+        width: 15rem;
+    }
+
     /*__Checkout__*/
     .payment_last-div {
         flex-direction: column;
