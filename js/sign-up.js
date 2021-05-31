@@ -17,6 +17,7 @@ function formValidation(event) {
 
     let nameConfirm;
     let emailConfirm;
+    let passwordValid;
     let passwordConfirm;
 
     if (nameInput.value.trim().length > 0) {                                        //validating that name is written
@@ -35,17 +36,23 @@ function formValidation(event) {
         emailConfirm = false;
     };
 
-    if (passwordInput.value.trim() === confirmInput.value.trim()) {                 //checking if created passwords match
+    if (passwordInput.value.trim().length > 5) {
         passwordError.style.display = "none";
+        passwordValid = true;
+    } else {
+        passwordError.style.display = "block";
+        passwordValid = false;
+    };
+
+    if (passwordInput.value.trim() === confirmInput.value.trim()) {                 //checking if created passwords match
         confirmError.style.display = "none";
         passwordConfirm = true;
     } else {
-        passwordError.style.display = "block";
         confirmError.style.display = "block";
         passwordConfirm = false;
     };
 
-    if (nameConfirm & emailConfirm & passwordConfirm) {
+    if (nameConfirm & emailConfirm & passwordConfirm & passwordValid) {
         contactForm.classList.add("complete-container");                            //adding complete message on complete validation
         contactForm.innerHTML = `<div>
                                     <h1>Register Complete</h1>
