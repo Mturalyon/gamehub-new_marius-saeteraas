@@ -5,8 +5,6 @@ const pcContainer = document.querySelector(".index-pc");
 
 const container = document.querySelector(".index-main");
 
-console.log(xboxContainer, playstationContainer, nintendoContainer, pcContainer, container);
-
 const url = "https://api.saeteraas.one/wp-json/wc/store/products?per_page=100";
 
 async function callAips() {
@@ -15,35 +13,13 @@ async function callAips() {
 
         const response = await fetch(url);
         const json = await response.json();
-        console.log(json);
 
         xboxContainer.innerHTML = ``;
         playstationContainer.innerHTML = ``;
         nintendoContainer.innerHTML = ``;
         pcContainer.innerHTML = ``;
 
-        for (let i = 0; i < json.length; i++) {
-
-            if (json[i].categories[0].name.toLowerCase() === "xbox") {
-                xboxContainer.innerHTML += `<a href="/html/games.html?id=${json[i].id}"><img src="${json[i].images[0].src}"
-                alt="picture link to video game site"></a>`;
-            };
-
-            if (json[i].categories[0].name.toLowerCase() === "playstation") {
-                playstationContainer.innerHTML += `<a href="/html/games.html?id=${json[i].id}"><img src="${json[i].images[0].src}"
-                alt="picture link to video game site"></a>`;
-            };
-
-            if (json[i].categories[0].name.toLowerCase() === "nintendo") {
-                nintendoContainer.innerHTML += `<a href="/html/games.html?id=${json[i].id}"><img src="${json[i].images[0].src}"
-                alt="picture link to video game site"></a>`;
-            };
-
-            if (json[i].categories[0].name.toLowerCase() === "pc") {
-                pcContainer.innerHTML += `<a href="/html/games.html?id=${json[i].id}"><img src="${json[i].images[0].src}"
-                alt="picture link to video game site"></a>`;
-            };
-        };
+        createHtml(json);
 
     }
 
@@ -59,7 +35,28 @@ async function callAips() {
 };
 
 function createHtml(json) {
+    for (let i = 0; i < json.length; i++) {
 
-}
+        if (json[i].categories[0].name.toLowerCase() === "xbox") {
+            xboxContainer.innerHTML += `<a href="/html/games.html?id=${json[i].id}"><img src="${json[i].images[0].src}"
+            alt="picture link to video game site"></a>`;
+        };
 
-callAips()
+        if (json[i].categories[0].name.toLowerCase() === "playstation") {
+            playstationContainer.innerHTML += `<a href="/html/games.html?id=${json[i].id}"><img src="${json[i].images[0].src}"
+            alt="picture link to video game site"></a>`;
+        };
+
+        if (json[i].categories[0].name.toLowerCase() === "nintendo") {
+            nintendoContainer.innerHTML += `<a href="/html/games.html?id=${json[i].id}"><img src="${json[i].images[0].src}"
+            alt="picture link to video game site"></a>`;
+        };
+
+        if (json[i].categories[0].name.toLowerCase() === "pc") {
+            pcContainer.innerHTML += `<a href="/html/games.html?id=${json[i].id}"><img src="${json[i].images[0].src}"
+            alt="picture link to video game site"></a>`;
+        };
+    };
+};
+
+callAips();
